@@ -28,10 +28,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem "figaro"
+gem 'flickr.rb', '~> 1.2', '>= 1.2.1'
+gem 'nokogiri', '~> 1.6', '>= 1.6.7.1'
+gem 'twilio-ruby'
+# gem 'rest-open-uri', '~> 1.0'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'pry', '~> 0.10.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

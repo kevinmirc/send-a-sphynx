@@ -8,13 +8,14 @@
 <p></p><p></p><p></p><p></p>
 
 <div class="jumbotron">
-  <form class="form-horizontal">
+  <%= form_tag('/home/create', method: :post, class: :"form-horizontal" ) %>
     <div class="input-field col s6">
       <%= text_field_tag "users_name", nil, placeholder: "Your name" %>
     </div>
     <div class="input-field col s6">
       <%= text_field_tag "phone_number", nil, placeholder: "Who needs a sphynx in their life?"%>
-      <%= submit_tag 'send', class: :"btn-floating btn-large waves-effect waves-light red", method: :post, url: :'create' %>
+      <%= submit_tag 'send', class: "btn-floating btn-large waves-effect waves-light red", method: :post, url: 'home/create' %>
     </div>
-  </form>
 </div>
+
+

@@ -20,11 +20,7 @@ body{
   margin: auto;
 }
 
-.container {
-  margin: 0;
-}
-
-.jumbotron{;
+.jumbotron{
 background-repeat:no-repeat;
 background-position:center;
 background-color: #ff3399;
@@ -34,7 +30,3 @@ padding: 10px;
 margin-bottom:70px;
 margin: auto;
 }
-/*
-.form-horizontal{
-  padding: 10px;
-};*/

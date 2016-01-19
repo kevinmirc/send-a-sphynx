@@ -1,5 +1,5 @@
 class SphynxSender < ActiveRecord::Base
-    def self.send(image, sender, recipient)
+  def self.send(image, sender, recipient)
     @client = Twilio::REST::Client.new ENV['ACCOUNT_SID'], ENV['AUTH_TOKEN']
     begin
      @client.account.messages.create(
@@ -12,6 +12,5 @@ class SphynxSender < ActiveRecord::Base
     rescue Twilio::REST::RequestError => e
       puts e.message
     end
-    return true
   end
 end

@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   def create
     pf = PhotoFetcher.new
 
-    @image = pf.get_image # "http://c2.staticflickr.com/6/5034/7172984636_a35be03e05_m.jpg"
+    @image = pf.get_image
     sender = params[:users_name]
     recipient = parse_phone_number(params[:phone_number])
 

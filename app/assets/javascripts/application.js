@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+$(function(){
+  $('form img').on('click', function(e){
+    $(this).parent('form').submit();
+  })
+})
